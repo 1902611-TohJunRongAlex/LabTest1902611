@@ -23,7 +23,7 @@ class IntegrationTest():
         # self.driver = webdriver.Chrome(executable_path="C:\\Users\\Jackelyn\\chromedriver_win32\\chromedriver.exe",
         #                                options=options)
         # self.driver = webdriver.ChromeOptions()
-        self.driver.get('https://un1br0.sitict.net:4000/login')
+        self.driver.get('http://178.128.27.165:5000')
     def test(self):
         print("[Integration Tests] - Starting tests")
         self.__labtest()
@@ -48,7 +48,7 @@ class IntegrationTest():
         print("[Integration Tests] - Labdemo passed")
 
     
-        print("[Integration Tests] - Admin Delete Product Test Passed")
+        print("[Integration Tests] - test passed")
 
 
     def tearDown(self):
