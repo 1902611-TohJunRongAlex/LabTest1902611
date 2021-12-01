@@ -1,7 +1,4 @@
-RUN apt-get update
-RUN apt-get install -y python-dev build-essential nginx
-RUN python -m pip install --upgrade pip
-RUN python -m pip install uwsgi
+FROM ubuntu:16.04
 
 RUN apt-get update -y && \
     apt-get install -y python-pip python-dev
