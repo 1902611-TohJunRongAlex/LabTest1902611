@@ -1,2 +1,2 @@
-pip install Jinja2
+Jinja2
 Flask==0.10.1
