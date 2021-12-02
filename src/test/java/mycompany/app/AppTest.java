@@ -23,7 +23,7 @@ public class AppTest
 {
 	WebDriver driver; 
 	WebDriverWait wait; 
-	String url = "http://178.128.27.165";
+	String url = "http://3.14.251.195/";
 	String validsearch = "valid";
 	String invalidsearch = "invalid<>";
 
