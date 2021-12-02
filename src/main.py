@@ -4,13 +4,16 @@ app = Flask(__name__)
 
 
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def main():
-    return render_template('index.html', methods=['GET', 'POST'])
+	if request.method == 'POST':
+        searchvalue = request.form['search']
+    return render_template('done.html',searchvalue = searchvalue)
+    return render_template('index.html')
 	
-@app.route("/done")
+@app.route("/done", methods=['GET', 'POST'])
 def done():
-    return render_template('done.html', methods=['GET', 'POST'])
+    return render_template('done.html')
 
 
 if __name__ == "__main__":
