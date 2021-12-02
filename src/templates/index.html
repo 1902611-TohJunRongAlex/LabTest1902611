@@ -2,17 +2,15 @@
     function validate() {
         var search = document.getElementById('search').value;
         if (!search) {
-            alert("Please fill in all required details.");
             return false;
         }
         if (!/^[A-Za-z ]+$/.test(search)){
-            alert("Please enter proper characters");
+			document.getElementById('search').value = ""
             return false;
         }
         return true;
     }
 </script>
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -32,7 +30,7 @@
 		</div>
 		<hr>
 
-		<form action="/done" method="POST" >
+		<form method="POST" onsubmit = "return validate()">
 			<div class="mb-3">
 				<label class="form-label">Search</label>
 				<input type="text" name='search' id = 'search' class="form-control">
